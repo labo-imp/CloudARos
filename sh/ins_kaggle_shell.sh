@@ -28,7 +28,7 @@ fi
 
 # submit a Kaggle
 res=$(/home/"$USER"/.local/bin/kaggle competitions submit -c  $vcur_kaggle_competencia_peque -f  /home/"$USER"/tmp/submit_sample.csv  -m   "prueba automatica durante instalacion")
-if [ ! "$res" = "$vcur_kaggle_submit_ok" ]; then
+if [[ ! "$res" == *"$vcur_kaggle_submit_ok"* ]]; then
     echo "$res"
     echo
     printf "\nError Fatal : No se pudo hacer el submit a la competencia Kaggle, archivo kaggle.json incorrecto o no registrado en la competencia \n\n"
