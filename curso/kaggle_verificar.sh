@@ -1,5 +1,5 @@
 #!/bin/bash
-# fecha revision   2026-07-26  04:35
+# fecha revision   2026-07-28  17:12
 
 # este script corre en Cloud Shell
 
