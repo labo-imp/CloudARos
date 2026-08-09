@@ -91,7 +91,7 @@ gcloud --quiet --project="$MY_PROJECT_ID" services enable  storage.googleapis.co
 printf "\nesperando para establecer billing\n"
 sleep  30
 MY_PROJECT_ID=$(gcloud projects list --filter="projectId~$vcur_gcprojprefix AND lifecycleState:ACTIVE" --format="value(projectId)")
-accountid=$(gcloud alpha billing accounts list  --format="value(ACCOUNT_ID)")
+accountid=$(gcloud alpha billing accounts list --filter=open=true --format="value(ACCOUNT_ID)")
 gcloud beta billing projects link "$MY_PROJECT_ID" --billing-account="$accountid"  --project="$MY_PROJECT_ID"
 
 printf "\ndando permisos de Compute\n"
