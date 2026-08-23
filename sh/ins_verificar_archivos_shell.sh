@@ -1,5 +1,5 @@
 #!/bin/bash
-# fecha revision   2026-07-28  17:12
+# fecha revision   2026-08-22  22:20
 
 # ese script corre en Google Cloud Shell
 # shellcheck source=SCRIPTDIR/common_machina.sh

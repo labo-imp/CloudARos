@@ -1,5 +1,5 @@
 #!/bin/bash
-# fecha revision   2026-07-28  17:12
+# fecha revision   2026-08-22  22:20
 
 # instalo  tmux + vim
 sudo  apt-get --yes  install  tmux  vim
