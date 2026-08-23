@@ -1,5 +1,5 @@
 #!/bin/bash
-# fecha revision   2026-07-28  17:12
+# fecha revision   2026-08-22  22:20
 
 # corre en  instance-instalacion, llamado desde Cloud Shell
 # instance-instalacion esta recien creada, completamente virgen
